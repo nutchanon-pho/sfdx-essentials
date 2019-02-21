@@ -69,7 +69,7 @@ export default class ExecuteFilter extends Command {
 
         // Process source folder filtering and copy files into target folder
         self.filterMetadatasByType()
-        self.copyImpactedObjects()
+        //self.copyImpactedObjects()
         self.displayResults()
       });
     });
