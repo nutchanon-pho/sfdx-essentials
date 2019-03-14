@@ -53,7 +53,7 @@ export class MetadataUtils {
       // 'StandardValueSetTranslation': { folder: 'standardValueSetTranslations', nameSuffixList: ['.standardValueSetTranslation'], sfdxNameSuffixList: ['.standardValueSetTranslation-meta.xml'] },
       'StaticResource': { folder: 'staticresources', nameSuffixList: ['.resource', '.resource-meta.xml'], sfdxNameSuffixList: ['.resource-meta.xml', '.json', '.txt', '.bin', '.js', '.mp3', '.gif'] },
       'Translations': { folder: 'translations', nameSuffixList: ['.translation'] },
-      'Workflow': { folder: 'workflows', nameSuffixList: ['.workflow'], sfdxNameSuffixList: ['.workflow-meta.xml'] },
+      'Workflow': { folder: 'workflows', nameSuffixList: ['.workflow'], sfdxNameSuffixList: ['.workflow'] },
 
       // Metadatas to use for building objects folder ( SObjects )
       // 'BusinessProcess': { sobjectRelated: true },
