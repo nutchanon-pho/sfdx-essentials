@@ -9,6 +9,7 @@ export class MetadataUtils {
     const metadataTypesDescription = {
       // Metadatas to use for copy
       'ApexClass': { folder: 'classes', nameSuffixList: ['.cls', '.cls-meta.xml'], sfdxNameSuffixList: ['.cls', '-meta.xml'] },
+      'AssignmentRules': { folder: 'assignmentRules', nameSuffixList: ['.assignmentRules'], sfdxNameSuffixList: ['-meta.xml'] },
       'ApexComponent': { folder: 'components', nameSuffixList: ['.component', '.component-meta.xml'], sfdxNameSuffixList: ['.component', '.component-meta.xml'] },
       'ApexPage': { folder: 'pages', nameSuffixList: ['.page', '.page-meta.xml'], sfdxNameSuffixList: ['.page', '-meta.xml'] },
       'ApprovalProcess': { folder: 'approvalProcesses', nameSuffixList: ['.approvalProcess'], sfdxNameSuffixList: ['.approvalProcess'] },
