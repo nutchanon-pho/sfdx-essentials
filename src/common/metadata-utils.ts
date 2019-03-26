@@ -51,6 +51,7 @@ export class MetadataUtils {
       'Settings': { folder: 'settings', nameSuffixList: ['.settings'], sfdxNameSuffixList: ['.settings-meta.xml'] },
       'SiteDotCom': { folder: 'siteDotComSites', nameSuffixList: ['.site', '.site-meta.xml'], sfdxNameSuffixList: ['.site', '.site-meta.xml'] },
       'StandardValueSet': { folder: 'standardValueSets', nameSuffixList: ['.standardValueSet-meta.xml', '.standardValueSet'], sfdxNameSuffixList: ['.standardValueSet-meta.xml', '.standardValueSet'] },
+      'SharingRules': { folder: 'sharingRules', nameSuffixList: ['.sharingRules'], sfdxNameSuffixList: ['.sharingRules-meta.xml', '.sharingRules'] },
       // 'StandardValueSetTranslation': { folder: 'standardValueSetTranslations', nameSuffixList: ['.standardValueSetTranslation'], sfdxNameSuffixList: ['.standardValueSetTranslation-meta.xml'] },
       'StaticResource': { folder: 'staticresources', nameSuffixList: ['.resource', '.resource-meta.xml'], sfdxNameSuffixList: ['.resource-meta.xml', '.json', '.txt', '.bin', '.js', '.mp3', '.gif'] },
       'Translations': { folder: 'translations', nameSuffixList: ['.translation'] },
