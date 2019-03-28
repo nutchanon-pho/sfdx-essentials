@@ -16,6 +16,7 @@ export class MetadataUtils {
       'ApexTrigger': { folder: 'triggers', nameSuffixList: ['.trigger', '.trigger-meta.xml'], sfdxNameSuffixList: ['.trigger', '-meta.xml'] },
       'AuraDefinitionBundle': { folder: 'aura', nameSuffixList: [''], sfdxNameSuffixList: [''] },
       'ContentAsset': { folder: 'contentassets', nameSuffixList: ['.asset', '.asset-meta.xml'], sfdxNameSuffixList: ['.asset', '.asset-meta.xml'] },
+      'CallCenter': { folder: 'callCenters', nameSuffixList: ['.callCenter', '.callCenter-meta.xml'], sfdxNameSuffixList: ['.callCenter', '.callCenter-meta.xml'] },
       'CustomApplication': { folder: 'applications', nameSuffixList: ['.app'], sfdxNameSuffixList: ['.app-meta.xml'] },
       'CustomLabels': { folder: 'labels', nameSuffixList: ['.labels'], sfdxNameSuffixList: ['.labels'] },
       'CustomMetadata': { folder: 'customMetadata', nameSuffixList: ['.md'], sfdxNameSuffixList: ['.md-meta.xml'] },
