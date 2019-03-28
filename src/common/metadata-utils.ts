@@ -36,6 +36,7 @@ export class MetadataUtils {
       'GlobalValueSetTranslation': { folder: 'globalValueSetTranslations', nameSuffixList: ['.globalValueSetTranslation'], sfdxNameSuffixList: ['.globalValueSetTranslation-meta.xml'] },
       'Group': { folder: 'groups', nameSuffixList: ['.group'], sfdxNameSuffixList: ['.group'] },
       'HomePageLayout': { folder: 'homePageLayouts', nameSuffixList: ['.homePageLayout'], sfdxNameSuffixList: ['.homePageLayout-meta.xml'] },
+      'HomePageComponent': { folder: 'homePageComponents', nameSuffixList: ['.homePageComponent'], sfdxNameSuffixList: ['.homePageComponent-meta.xml'] },
       'Layout': { folder: 'layouts', nameSuffixList: ['.layout'], sfdxNameSuffixList: ['.layout-meta.xml'] },
       'MilestoneType': { folder: 'milestoneTypes', nameSuffixList: ['.milestoneType'], sfdxNameSuffixList: ['.milestoneType'] },
       'NamedCredential': { folder: 'namedCredentials', nameSuffixList: ['.namedCredential'], sfdxNameSuffixList: ['.namedCredential-meta.xml'] },
