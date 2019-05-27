@@ -38,6 +38,7 @@ export class MetadataUtils {
       'HomePageLayout': { folder: 'homePageLayouts', nameSuffixList: ['.homePageLayout'], sfdxNameSuffixList: ['.homePageLayout-meta.xml'] },
       'HomePageComponent': { folder: 'homePageComponents', nameSuffixList: ['.homePageComponent'], sfdxNameSuffixList: ['.homePageComponent-meta.xml'] },
       'Layout': { folder: 'layouts', nameSuffixList: ['.layout'], sfdxNameSuffixList: ['.layout-meta.xml'] },
+      'LightningComponentBundle': { folder: 'lwc', nameSuffixList: [''], sfdxNameSuffixList: [''] },
       'MilestoneType': { folder: 'milestoneTypes', nameSuffixList: ['.milestoneType'], sfdxNameSuffixList: ['.milestoneType'] },
       'NamedCredential': { folder: 'namedCredentials', nameSuffixList: ['.namedCredential'], sfdxNameSuffixList: ['.namedCredential-meta.xml'] },
       'Network': { folder: 'networks', nameSuffixList: ['.network'], sfdxNameSuffixList: ['.network-meta.xml'] },
