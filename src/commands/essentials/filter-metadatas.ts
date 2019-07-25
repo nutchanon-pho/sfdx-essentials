@@ -10,7 +10,8 @@ export default class ExecuteFilter extends Command {
     // flag with a value (-n, --name=VALUE)
     packagexml: flags.string({ char: 'p', description: 'package.xml file path' }),
     inputfolder: flags.string({ char: 'i', description: 'Input folder (default: "." )' }),
-    outputfolder: flags.string({ char: 'o', description: 'Output folder (default: filteredMetadatas)' })
+    outputfolder: flags.string({ char: 'o', description: 'Output folder (default: filteredMetadatas)' }),
+    destructiveChangesXml: flags.string({ char: 'd', description: 'destructiveChanges.xml file path' }),
   }
 
   static args = []
@@ -19,6 +20,7 @@ export default class ExecuteFilter extends Command {
   packageXmlFile
   inputFolder
   outputFolder
+  destructiveChangesXml
 
   // Internal properties
   fs = require('fs')
@@ -39,6 +41,7 @@ export default class ExecuteFilter extends Command {
 
     // Get input arguments or default values
     this.packageXmlFile = flags.packagexml
+    this.destructiveChangesXml = flags.destructiveChangesXml
     this.inputFolder = flags.inputfolder || '.'
     this.outputFolder = flags.outputfolder || 'filteredMetadatas'
     this.log(`Initialize filtering of ${this.inputFolder} ,using ${this.packageXmlFile} , into ${this.outputFolder}`)
@@ -66,6 +69,10 @@ export default class ExecuteFilter extends Command {
 
         // Copy package.xml file in output folder
         self.fse.copySync(self.packageXmlFile, self.outputFolder + '/package.xml')
+
+        if(self.destructiveChangesXml) {
+          self.fse.copySync(self.destructiveChangesXml, self.outputFolder + '/destructiveChanges.xml')
+        }
 
         // Process source folder filtering and copy files into target folder
         self.filterMetadatasByType()
